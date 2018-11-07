@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Therese Levin</title>
+	<meta name="author" content="Therese Levin">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Css filer -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Script från JQuery, till smooth scroll till menyn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Lägg till mjuk scroll till alla länkar "a" när man klickar på e
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // jQuerys animation för mjuk scroll
+        // Nummret är hur många millisekunder det tar till den valda sektionen
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1200, function(){
+    
+        });
+        } 
+    });
+    });
+	</script>
+	
+</head>
+<body>
+
+	<header id="top">
+		<div class="overthefold"> 
+				<nav> 
+					<!-- Mobil Meny -->
+					<div id="myNav" class="overlay">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<div class="overlay-content">
+								<a href="#top">Home</a>
+								<a href="#about">About me</a>
+								<a href="#education">Education</a>
+								<a href="#qualification">Qualification</a>
+								<a href="#funfact">Fun fact</a>
+								<a href="#contact">Contact me</a>
+							</div> <!-- / .overlay-content -->
+					</div> <!-- / #myNav / .overlay-->
+		
+					<span onclick="openNav()">&#9776; </span>
+					<!-- Script till mabol-navigationsmenyn-->
+					<script>
+					function openNav() {
+						document.getElementById("myNav").style.height = "100%";
+					}
+					
+					function closeNav() {
+						document.getElementById("myNav").style.height = "0%";
+					}
+					</script>
+				</nav>
+
+				<div class="name">
+						<h1>.Levin</h1>
+						<p>Therese</p>
+				</div> <!-- / .name -->
+
+				<div class="arrow bounce">
+					<a href="#about"><img src="images/caret-down.png" alt="arrow pointing down"></a>
+				</div> <!-- / .arrow / .bounce-->
+		</div> <!-- / .overthefold-->
+	</header>
+
+	<main>
+		<div class="aboutme" id="about">
+			<div class="container">
+				<div>
+					<h2>About me</h2>
+					<h3>A web developer from the small village Hjärup in Sweden. </h3>
+					<p>My name is Therese. I am a webdeveloper currently studying at Malmö Yrkeshögskola. Mostly I am doing webprogramming, but I am working on getting better at design and layout.
+					<br>Keep scrolling to get to know me better!</p>
+				</div> <!--/ div -->
+				<div>
+					<img src="images/me3.jpg" alt="Profile picture of Therese Levin">
+				</div> <!--/ div -->
+			</div> <!-- / .container-->
+		</div> <!-- / .aboutme-->
+
+		<div class="education" id="education">
+			<div class="container">
+					<h2>Education</h2>		
+					<div>
+						<div><img src="images/nti.png" alt="NTI logotype"></div>
+						<div><img src="images/mau.png" alt="Malmö University logotype"></div>
+						<div><img src="images/my.png" alt="Malmö yrkeshögskola logotype"></div>
+						<div><p>Electrical and Energy Program; Computer and Communication Technology</p></div>
+						<div><p>Media production and process design</p></div>
+						<div><p>Content Producer</p></div>
+					</div> <!-- / div-->
+			</div> <!-- / .container-->
+		</div> <!-- / .education-->
+
+		<div class="qualification" id="qualification">
+			<div class="container">
+					<div>
+						<div><img src="images/html.png" alt=""></div>
+						<div>
+							<h2>Qualifications</h2>
+							<div><p>HTML &amp; CSS</p></div>
+							<div><p>PHP &amp; JavaScript</p></div>
+							<div><p>Wordpress</p></div>
+							<div><p>Photoshop, Illustrator &amp; InDesign</p></div>
+							<div><p>Calligraphy</p></div>
+						</div>
+					</div> <!-- / div-->
+				</div> <!-- / .container-->
+		</div> <!-- / .qualification-->
+
+		<div class="funfact" id="funfact">
+			<div class="container">
+				<div id="fun">
+					<div>
+						<h2>Fun fact</h2>
+						<p>I have 2 cockatiels</p>
+						<p>When I was younger I practiced judo</p>
+						<p>I play ukulele</p>	
+						<p>I have a collection of LPs</p>	
+					</div>
+					<div>
+						<img src="images/lp.png" alt="picture of lp record">
+					</div> <!-- / div-->
+					</div> <!-- / #fun -->
+				</div> <!-- / .container-->
+			</div> <!-- / .funfact-->
+			
+	</main>
+	
+  <footer>
+		<div class="foot" id="contact">
+			<div class="container2">
+					<h2>Contact me</h2>
+					<i>Be my friend</i>
+					<div class="social">
+						<!-- Logotyper gjorda i Illustrator, SVG kod-->
+						<a href="https://www.facebook.com/therese.levin.144?ref=bookmarks" target="_blank">
+							<svg version="1.1" id="Lager_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#FCFCFC;}
+						</style>
+						<path class="st0" d="M474.2,1024h246.5V515.8h232.2l34.6-161.1H730.9V215.2c0,0-10.2-41.8,40.7-43.8c50.9-2,215.9,0,215.9,0V0H661.6
+							c0,0-160.9,8-187.4,167.3v183.3l-124.3-2V504h124.3V1024z"/>
+						</svg>
+						</a>
+
+						<a href="https://www.instagram.com/karinthereselevin/?hl=sv" target="_blank">
+							<svg version="1.1" id="Lager_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#FFFFFF;}
+						</style>
+						<g>
+							<polygon class="st0" points="155.4,269.5 265.7,269.5 262,241.7 164.3,238.6 	"/>
+							<polygon class="st0" points="983.5,263.3 1006.7,223.2 1126.6,223.2 1150.8,263.3 	"/>
+							<path class="st0" d="M0,514.9h487c0,0,246.3-298,526.4,5.9h259V359.3c0,0-8.4-66.1-83-64.6l-328,0l-71.8-99.8h-304l-64.7,86.6
+								l-15.5,14.7l-325.2-2.9c0,0-54.9,0-80.2,64.6V514.9z"/>
+							<ellipse class="st0" cx="750.1" cy="663.6" rx="160.1" ry="166.9"/>
+							<path class="st0" d="M0,557.9h452.9c0,0-36.2,349.8,297.1,363.4c0,0,331.8-10.6,281.2-363.4h241.1l7.5,389c0,0-17.4,81.4-76.6,76.9
+								L75.6,1024c0,0-75.9-4.7-75.6-69.5V557.9z"/>
+					 </g>
+					 </svg></a>
+
+						<a href="https://twitter.com/levin_therese" target="_blank">
+							<svg version="1.1" id="Lager_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#00000;}
+						</style>
+						<path class="st0" d="M41,897.8c0,0,193.6,7.6,317.9-96.4c0,0-157.5-42-199.3-158.4c0,0,41.8,7.6,81.6-28.6
+							c0,0-176.5-72.5-176.5-199.4c0,0,50.3,28.6,78.8-24.8c0,0-133.8-109.7-58.8-310.1c0,0,243,230.9,510.6,230.9c0,0,29.8,5,21.2-56.1
+							c0,0,17.2-176.7,175.2-230.1c0,0,164.7-48.1,286.3,68.8l153.2-51l-56.5,106.9l85.2-12.5l-108.7,129c0,0,1.6,417.9-318.5,620.2
+							C832.8,886.1,398.1,1154.7,41,897.8z"/>
+					 </svg>
+					</a>
+					</div> <!-- / .social-->
+					
+					<form action="mailto:therese.levin@outlook.com" method="post" enctype="text/plain">
+				
+					<input type="text" id="fname" name="firstname" placeholder="Name">
+				
+					<input type="email" id="mail" name="mail" placeholder="Mail">
+				
+					<textarea id="subject" name="subject" placeholder="Write something to me" style="height:200px"></textarea>
+				
+					<input type="submit" value="Send">
+					
+					</form>
+			</div> <!-- / .container2-->
+		</div> <!-- / .foot -->
+	</footer>
+
+
+</body>
+</html>
