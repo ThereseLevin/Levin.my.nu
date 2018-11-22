@@ -1,0 +1,44 @@
+/*
+ Theme Name:   hava Child
+ Theme URI:    http://example.com/hava-child/
+ Description:  hava Child Theme
+ Author:       Therese Levin
+ Author URI:   http://levin.my.nu
+ Template:     hava
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         
+ Text Domain:  hava-child
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.title, .nav, .container, .copytext {
+	font-family: 'Poiret One', cursive;
+}
+a:hover {
+	color: #A7A5A6;
+	text-decoration: none;
+}
+
+.container {
+	background-color: rgba(255,255,255, 0.6);
+	padding-top: 3em;
+}
+
+.blog-head {
+	margin-bottom:0;
+}
+
+.blog-ass {
+	margin-top:0;
+}
+
+.index-text {
+	text-align: center;
+}
+
+.prof-pic {
+	border: 5px solid black;
+}
